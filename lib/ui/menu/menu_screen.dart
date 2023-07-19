@@ -37,9 +37,7 @@ class MenuScreen extends StatelessWidget {
     minLeadingWidth: 20,
     leading: Icon(item.icon),
     title: Text(item.title),
-    onTap: (){
-      print('''clicou em ${item.title}''');
-    },
+    onTap: () => onSelectedItem(item),
    )
   );
 }
